@@ -20,7 +20,7 @@ namespace DailyRate
             writeFee(calculateFee(dailyRate, noOfDays));
         }
 
-        private void writeFee(double v) => Console.WriteLine($"The total fee will be: {v * 1.1}");
+        private void writeFee(double v) => Console.WriteLine($"The total fee (including 10% commission) will be: {v * 1.1}");
 
 
         private double calculateFee(double dailyRate, int noOfDays) => dailyRate * noOfDays;
